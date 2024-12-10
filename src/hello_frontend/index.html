@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SpaceX Clone Website">
+  <meta name="author" content="Your Name">
+  <title>SpaceX Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Header & Navigation */
+    .header {
+      background-color: #111;
+      padding: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo h1 {
+      color: #ff0;
+      font-size: 2rem;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .nav-links li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+
+    .navbar .nav-links li a:hover {
+      color: #ff0;
+    }
+
+    /* Home Section */
+    .home {
+      height: 100vh;
+      background: url('https://source.unsplash.com/1920x1080/?space') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .home h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .home p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      padding: 10px 20px;
+      background-color: #ff0;
+      color: #000;
+      font-size: 1.1rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cta-button:hover {
+      background-color: #e6c300;
+    }
+
+    /* About Section */
+    .about {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #222;
+    }
+
+    .about-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .about-container p {
+      font-size: 1.2rem;
+    }
+
+    /* Launches Section */
+    .launches {
+      padding: 60px 20px;
+      background-color: #111;
+      text-align: center;
+    }
+
+    .launches h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .launch-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .launch-item {
+      background-color: #333;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .launch-item h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .launch-item p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .launch-item a {
+      text-decoration: none;
+      color: #ff0;
+    }
+
+    /* Missions Section */
+    .missions {
+      padding: 60px 20px;
+      background-color: #222;
+      text-align: center;
+    }
+
+    .missions h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .missions-container a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff0;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .missions-container a:hover {
+      background-color: #e6c300;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 60px 20px;
+      background-color: #111;
+      text-align: center;
+    }
+
+    .contact-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #ff0;
+      color: #000;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form button:hover {
+      background-color: #e6c300;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #222;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>SpaceX</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#launches">Launches</a></li>
+        <li><a href="#missions">Missions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h2>Welcome to SpaceX</h2>
+      <p>Exploring the future of space travel and technology.</p>
+      <a href="#about" class="cta-button">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p>SpaceX is revolutionizing space technology, with the goal of reducing space transportation costs and enabling
+        the colonization of Mars.</p>
+    </div>
+  </section>
+
+  <!-- Launches Section -->
+  <section id="launches" class="launches">
+    <div class="launch-container">
+      <h2>Upcoming Launches</h2>
+      <div class="launch-item">
+        <h3>Falcon 9 Launch</h3>
+        <p>Launch Date: 2024-12-20</p>
+        <a href="#">View Details</a>
+      </div>
+      <div class="launch-item">
+        <h3>Starship Mission</h3>
+        <p>Launch Date: 2025-01-15</p>
+        <a href="#">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Missions Section -->
+  <section id="missions" class="missions">
+    <div class="missions-container">
+      <h2>Our Missions</h2>
+      <p>We aim to make space travel more affordable and sustainable for everyone.</p>
+      <a href="#">Explore More</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 SpaceX Clone. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
